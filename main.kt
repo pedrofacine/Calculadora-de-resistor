@@ -30,3 +30,22 @@ fun obterMultip (cor: String): Double{
         else -> -1.0
     }
 }
+fun tolerancia(cor: String): String{
+    return when (cor.lowercase()) {
+        "marrom" -> "+-1%"
+        "vermelho" -> "+-2%"
+        "verde" -> "+-0.5%"
+        "azul" -> "+-0.25%"
+        "violeta" -> "+-0.1%"
+        "cinza" -> "+-0.05%"
+        "dourado" -> "+-5%"
+        "prateado" -> "+-10%"
+        else -> "Valor inválido"
+    }
+}
+fun main(){
+    println("Quantas faixas tem? (4 ou 5)")
+    val numFaixas = readLine()
+
+
+}
